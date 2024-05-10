@@ -12,7 +12,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Paper Art: Phone Cases</title>
+  <title>Paper Art: Originals</title>
 
   <!-- slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
@@ -64,9 +64,9 @@
               </nav>
             </div>
           </div>
-        </header>
-        <h1 style="font-size: 200pt; font-weight: 1000;text-align: center; position: relative; top: 100px;">Paper Art</h1>
-      </div>
+          </header>
+          <h1 style="font-size: 200pt; font-weight: 1000;text-align: center; position: relative; top: 100px;">Coasters</h1>
+        </div>
     <!-- end header section -->
     <!-- slider section -->
    
@@ -81,12 +81,117 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
   </script>
 
+  <script>
+    function openNav() {
+      document.getElementById("myNav").classList.toggle("menu_width");
+      document.querySelector(".custom_menu-btn").classList.toggle("menu_btn-style");
+    }
+  </script>
+
+  <!-- owl carousel script -->
+  <script type="text/javascript">
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      navText: [],
+      autoplay: true,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 2
+        }
+      }
+    });
+
+
+    $(".owl_carousel1").owlCarousel({
+      loop: true,
+      margin: 25,
+      nav: true,
+      navText: [],
+      autoplay: true,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 2
+        }
+      }
+    });
+  </script>
+  <!-- end owl carousel script -->
+
+  <script>
+    /** google_map js **/
+
+    function myMap() {
+      var mapProp = {
+        center: new google.maps.LatLng(40.712775, -74.005973),
+        zoom: 18,
+      };
+      var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+    }
+  </script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+  <!-- End Google Map -->
 <style>
   a{
     color: white;
   }
 </style>
-
+<section style="text-align: center">
+ <div style="
+  overflow: auto;
+  display: inline-block;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 259px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: -2px 10px 5px rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  font-family: SQ Market, SQ Market, Helvetica, Arial, sans-serif;
+  ">
+    <img src="https://items-images-production.s3.us-west-2.amazonaws.com/files/5273ab69fac3fb3954fbe40310d736b4ec642484/original.png" alt="Luxurious Lamborghini" onerror="this.style.display='none'" style="width: 100%;">
+  <div style="padding: 20px;">
+      <p style="
+    font-size: 18px;
+    line-height: 20px;
+  ">Luxurious Lamborghini</p>
+      <p style="
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 600;
+  ">$440.00</p>
+    <a target="_blank" href="https://square.link/u/C5Wd0euj?src=embed" style="
+    display: inline-block;
+    font-size: 18px;
+    line-height: 48px;
+    height: 48px;
+    color: #ffffff;
+    min-width: 212px;
+    background-color: #006aff;
+    text-align: center;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.1) inset;
+    border-radius: 6px;
+  ">Buy now</a>
+  </div>
+</div>
+</section>
 </body>
 
 </html>
